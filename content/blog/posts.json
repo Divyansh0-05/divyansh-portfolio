@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "designing-warm-developer-portfolios",
+    "title": "Designing Warm, Cinematic Developer Portfolios",
+    "excerpt": "Thoughts on crafting developer portfolios that feel handcrafted, warm, and cinematic instead of generic and auto‑generated.",
+    "date": "2025-11-20",
+    "thumbnail": "/profile.jpg"
+  },
+  {
+    "slug": "scaling-mern-apps-in-production",
+    "title": "Scaling MERN Applications in Production",
+    "excerpt": "From local prototypes to production‑ready deployments: patterns I use to keep MERN stacks maintainable and scalable.",
+    "date": "2025-09-02",
+    "thumbnail": "/profile.jpg"
+  },
+  {
+    "slug": "building-learnix",
+    "title": "Behind the Scenes of Learnix",
+    "excerpt": "How I approached the architecture, UX, and real‑time experience of a skill‑barter platform built for learners.",
+    "date": "2025-05-18",
+    "thumbnail": "/profile.jpg"
+  }
+]
+
