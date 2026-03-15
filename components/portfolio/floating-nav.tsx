@@ -73,7 +73,7 @@ export default function FloatingNav({ visible }: FloatingNavProps) {
       animate={visible ? { y: 0, opacity: 1 } : { y: -32, opacity: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="fixed inset-x-0 top-0 z-[100] flex justify-center px-4 pt-4 md:pt-6"
-      style={{ pointerEvents: visible ? "auto" : "none" }}
+      style={{ pointerEvents: visible ? "none" : "none" }}
     >
       <div
         className={`flex w-full max-w-5xl items-center justify-between rounded-full border px-4 py-2.5 md:px-6 md:py-3 transition-all duration-500 ${
@@ -81,6 +81,7 @@ export default function FloatingNav({ visible }: FloatingNavProps) {
             ? "border-white/55 bg-white/45 backdrop-blur-2xl shadow-[0_14px_40px_rgba(15,23,42,0.16)] ring-1 ring-white/40"
             : "border-white/50 bg-gradient-to-b from-white/55 via-white/35 to-white/20 backdrop-blur-2xl shadow-[0_10px_30px_rgba(15,23,42,0.12)] ring-1 ring-white/35"
         }`}
+        style={{ pointerEvents: "auto" }}
       >
           <div className="flex items-center gap-2 md:gap-3">
             <div className="h-8 w-8 rounded-full border border-slate-300 bg-slate-900 shadow-[0_0_15px_rgba(15,23,42,0.25)]" />

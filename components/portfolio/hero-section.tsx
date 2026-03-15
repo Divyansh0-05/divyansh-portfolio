@@ -50,7 +50,7 @@ export default function HeroSection() {
       className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#d7d7d7]"
     >
       {/* Side labels/actions */}
-      <div className="absolute inset-x-0 top-8 z-30 hidden items-start justify-between px-6 md:flex md:px-12">
+      <div className="absolute inset-x-0 top-8 z-[110] hidden items-start justify-between px-6 md:flex md:px-12">
         <div
           ref={leftTextRef}
           className="pointer-events-none text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-800/85 md:text-xs"
@@ -76,7 +76,7 @@ export default function HeroSection() {
 
       <div className="relative mt-10 h-[min(78vh,670px)] w-[min(99vw,1320px)] overflow-hidden rounded-[2.2rem] bg-[#8c8c8c] shadow-[0_24px_60px_rgba(0,0,0,0.12)]">
         {/* Mobile side labels/actions inside card */}
-        <div className="absolute inset-x-0 top-4 z-40 flex items-start justify-between px-4 md:hidden">
+        <div className="absolute inset-x-0 top-4 z-[110] flex items-start justify-between px-4 md:hidden">
           <div
             className="pointer-events-none text-[10px] font-semibold uppercase tracking-[0.26em] text-white/90"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
