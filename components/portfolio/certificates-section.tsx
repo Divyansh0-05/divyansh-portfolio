@@ -41,10 +41,10 @@ export default function CertificatesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.46, delay: 0.05, ease: "easeOut" }}
-              className="mt-4 text-[clamp(2.4rem,8vw,5.2rem)] font-black uppercase tracking-[0.16em] text-white"
+              className="mt-4 text-[clamp(2.0rem,6vw,4.5rem)] font-black uppercase tracking-[0.16em] text-white"
               style={{ fontFamily: "var(--font-space-grotesk)" }}
             >
-              Certificates
+              Certifications
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -62,10 +62,9 @@ export default function CertificatesSection() {
             </motion.div>
           </div>
 
-          <div className="mx-auto grid w-full max-w-6xl gap-6 lg:grid-cols-12">
+          <div className="mx-auto grid w-full max-w-6xl gap-6 lg:grid-cols-3">
             {certificates.map((certificate, index) => {
               const hasLink = Boolean(certificate.href)
-              const columnClass = index === 0 ? "lg:col-span-7" : index === 1 ? "lg:col-span-5" : "lg:col-span-12"
 
               return (
                 <motion.div
@@ -75,11 +74,11 @@ export default function CertificatesSection() {
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
                   whileHover={{ y: -8 }}
-                  className={`${columnClass} group relative overflow-hidden rounded-[2.2rem] border border-white/10 bg-white/[0.05] p-4 shadow-[0_26px_70px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-shadow duration-300 hover:shadow-[0_36px_90px_rgba(0,0,0,0.38)]`}
+                  className="group relative overflow-hidden rounded-[2.2rem] border border-white/10 bg-white/[0.05] p-4 shadow-[0_26px_70px_rgba(0,0,0,0.3)] backdrop-blur-xl transition-shadow duration-300 hover:shadow-[0_36px_90px_rgba(0,0,0,0.38)]"
                 >
                   <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_36%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.18),transparent)]" />
-                  <div className="relative grid gap-5 lg:grid-cols-[minmax(0,1fr)_280px]">
+                  <div className="relative grid gap-4">
                     <button
                       type="button"
                       onClick={() => setActiveCertificate(certificate)}
@@ -88,7 +87,7 @@ export default function CertificatesSection() {
                       <img
                         src={certificate.image}
                         alt={certificate.title}
-                        className="h-[300px] w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.06] lg:h-[360px]"
+                        className="h-[200px] w-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.06]"
                         loading="lazy"
                       />
                       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(13,15,18,0.04)_0%,rgba(13,15,18,0.18)_50%,rgba(13,15,18,0.48)_100%)]" />
@@ -97,7 +96,7 @@ export default function CertificatesSection() {
                       </div>
                     </button>
 
-                    <div className="flex flex-col justify-between rounded-[1.7rem] border border-white/10 bg-white/[0.04] p-5">
+                    <div className="flex flex-col justify-between rounded-[1.7rem] border border-white/10 bg-white/[0.04] p-4">
                       <div>
                         <div className="flex items-center justify-between gap-3">
                           <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-white/46">
@@ -108,32 +107,32 @@ export default function CertificatesSection() {
                           </span>
                         </div>
                         <h3
-                          className="mt-4 text-2xl font-black leading-tight tracking-[-0.04em] text-white"
+                          className="mt-3 text-lg font-black leading-tight tracking-[-0.04em] text-white"
                           style={{ fontFamily: "var(--font-space-grotesk)" }}
                         >
                           {certificate.title}
                         </h3>
-                        <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-white/52">
+                        <p className="mt-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-white/52">
                           {certificate.issuer}
                         </p>
-                        <p className="mt-5 text-sm leading-7 text-white/54">
+                        <p className="mt-3 text-xs leading-5 text-white/54">
                           Click the certificate preview to inspect it in full size, then open the original source if available.
                         </p>
                       </div>
 
-                      <div className="mt-8">
+                      <div className="mt-4">
                         {hasLink ? (
                           <a
                             href={certificate.href ?? undefined}
                             target="_blank"
                             rel="noreferrer"
-                            className="inline-flex translate-y-3 items-center gap-2 rounded-full border border-white/16 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-black opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+                            className="inline-flex translate-y-3 items-center gap-2 rounded-full border border-white/16 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-black opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
                           >
                             View Certificate
-                            <ArrowUpRight className="h-4 w-4" />
+                            <ArrowUpRight className="h-3 w-3" />
                           </a>
                         ) : (
-                          <span className="inline-flex items-center rounded-full border border-white/12 bg-white/[0.06] px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-white/64">
+                          <span className="inline-flex items-center rounded-full border border-white/12 bg-white/[0.06] px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-white/64">
                             Preview Only
                           </span>
                         )}

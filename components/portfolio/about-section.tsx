@@ -108,6 +108,10 @@ export default function AboutSection() {
               I&apos;m <span data-hl className="rounded px-1 bg-[linear-gradient(90deg,rgba(194,65,12,0.42)_0%,rgba(194,65,12,0.42)_100%)] bg-no-repeat [background-size:0%_100%]">Divyansh Singh</span>, a Computer Science student at <span data-hl className="rounded px-1 bg-[linear-gradient(90deg,rgba(194,65,12,0.42)_0%,rgba(194,65,12,0.42)_100%)] bg-no-repeat [background-size:0%_100%]">Lovely Professional University</span> with a passion for building modern web applications and solving real-world problems through technology.
             </p>
 
+            <p className="max-w-2xl text-[1.03rem] leading-relaxed text-slate-700 md:text-[1.08rem] font-bold">
+              My target role: Full Stack Developer
+            </p>
+
             <p className="max-w-2xl text-[1.03rem] leading-relaxed text-slate-700 md:text-[1.08rem]">
               I specialize in <span data-hl className="rounded px-1 bg-[linear-gradient(90deg,rgba(194,65,12,0.42)_0%,rgba(194,65,12,0.42)_100%)] bg-no-repeat [background-size:0%_100%]">full-stack development</span> using the <span data-hl className="rounded px-1 bg-[linear-gradient(90deg,rgba(194,65,12,0.42)_0%,rgba(194,65,12,0.42)_100%)] bg-no-repeat [background-size:0%_100%]">MERN stack</span>, where I develop scalable applications with clean architecture and intuitive user experiences. I enjoy turning ideas into real products that are both technically efficient and visually engaging.
             </p>

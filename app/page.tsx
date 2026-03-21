@@ -11,6 +11,8 @@ import SectionReveal from "@/components/portfolio/section-reveal"
 import CustomCursor from "@/components/portfolio/custom-cursor"
 import CertificatesSection from "@/components/portfolio/certificates-section"
 import AchievementsSection from "@/components/portfolio/achievements-section"
+import EducationSection from "@/components/portfolio/education-section"
+import SoftSkillsSection from "@/components/portfolio/soft-skills-section"
 
 export default function PortfolioPage() {
   const [navVisible, setNavVisible] = useState(false)
@@ -63,6 +65,11 @@ export default function PortfolioPage() {
         <ProjectsSection />
       </SectionReveal>
 
+      {/* Soft Skills */}
+      <SectionReveal delay={0.05}>
+        <SoftSkillsSection />
+      </SectionReveal>
+
       {/* Certificates */}
       <SectionReveal delay={0.05}>
         <CertificatesSection />
@@ -71,6 +78,11 @@ export default function PortfolioPage() {
       {/* Achievements */}
       <SectionReveal delay={0.05}>
         <AchievementsSection />
+      </SectionReveal>
+
+      {/* Education */}
+      <SectionReveal delay={0.05}>
+        <EducationSection />
       </SectionReveal>
 
       {/* Contact */}

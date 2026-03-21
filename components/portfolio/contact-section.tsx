@@ -94,10 +94,10 @@ export default function ContactSection() {
         </div>
 
         <div
-          className="mt-10 text-[clamp(3.2rem,11.8vw,14rem)] font-black lowercase leading-[0.82] tracking-[-0.05em] text-[#ece9e1]"
+          className="mt-10 text-[clamp(3.2rem,11.8vw,14rem)] font-black leading-[0.82] tracking-[-0.05em] text-[#ece9e1]"
           style={{ fontFamily: "var(--font-space-grotesk)" }}
         >
-          divyansh singh
+          Divyansh Singh
         </div>
 
         <div className="mt-4 border-t border-white/10 pt-4 text-xs text-[#a3a3a3]">

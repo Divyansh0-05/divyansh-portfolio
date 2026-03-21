@@ -121,10 +121,10 @@ export default function HeroSection() {
           style={{ fontFamily: "var(--font-space-grotesk)" }}
         >
           <span className="hidden whitespace-nowrap text-[clamp(3.2rem,10.8vw,11.5rem)] md:block">
-            divyansh&nbsp;singh
+            Divyansh&nbsp;Singh
           </span>
-          <span className="block text-[clamp(3.4rem,16vw,5.5rem)] md:hidden">divyansh</span>
-          <span className="block text-[clamp(3.4rem,16vw,5.5rem)] md:hidden">singh</span>
+          <span className="block text-[clamp(3.4rem,16vw,5.5rem)] md:hidden">Divyansh</span>
+          <span className="block text-[clamp(3.4rem,16vw,5.5rem)] md:hidden">Singh</span>
         </h1>
       </div>
     </section>

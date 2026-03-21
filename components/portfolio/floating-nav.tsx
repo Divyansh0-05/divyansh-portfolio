@@ -8,7 +8,7 @@ const navItems = [
   { label: "About Me", href: "#about", type: "anchor" as const },
   { label: "Tech Stack", href: "#skills", type: "anchor" as const },
   { label: "Projects", href: "#projects", type: "anchor" as const },
-  { label: "Certificates", href: "#certificates", type: "anchor" as const },
+  { label: "Certification", href: "#certificates", type: "anchor" as const },
   { label: "Achievements", href: "#achievements", type: "anchor" as const },
   { label: "Contact", href: "#contact", type: "anchor" as const },
 ]
